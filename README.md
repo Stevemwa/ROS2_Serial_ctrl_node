@@ -27,7 +27,7 @@ This project entails of a robotic vehicle that navigates on its own avoiding obs
 * On your ROS2 Workspace navigate to src directory ``` cd /path/to/your/ROS2workspace/src```
 * In the src directory
    ```
-    git clone
+    git clone https://github.com/Stevemwa/Serial_ctrl.git
    ```
 * remove the readme
   ```
@@ -52,4 +52,9 @@ This project entails of a robotic vehicle that navigates on its own avoiding obs
    ```
 * IF BUILD WAS SUCCESSFUL NEXT IS TO RUN THE PROJECT
 ## HOW TO USE THE PROJECT
+* Ensure that you have updated the usb device name on your code
+* source the 
+```
+source install/.bashrc
+```
 ## TESTS
