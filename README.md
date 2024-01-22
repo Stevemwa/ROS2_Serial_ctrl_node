@@ -11,15 +11,45 @@ This project entails of a robotic vehicle that navigates on its own avoiding obs
 * Adding a camera Node
 * Fully unsupervised SLAM
 ## HOW TO INSTALL THE PROJECT
-* Have ROS2 Humble preinstalled [Link](https://docs.ros.org/en/humble/Installation.html)
-* Configure your environment [Link](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html)
-* ```sudo apt update```
-* ```sudo apt install ros-humble-turtlesim```
-* Install pyserial ```pip install pyserial```
-* On your ROS2 Workspace navigate to src directory > cd /path/to/your/ROS2workspace/src
-* In the src directory ```git clone```
-* remove the readme ```rm README.txt``` or use **rosignone** ```touch .rosignore``` then ```nano .rosignore ``` # Use your preferred text editor ```README*``` then save and exit
-* Get to your workspace then ```colcon build```
+* Have ROS2 Humble preinstalled [ROS2 HUMBLE INSTALLATION](https://docs.ros.org/en/humble/Installation.html)
+* Configure your environment [ROS2 ENVIRONMENT SETUP](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html)
+* ```
+   sudo apt update
+  ```
+
+* ```
+  sudo apt install ros-humble-turtlesim
+  ```
+* Install pyserial
+  ```
+   pip install pyserial
+  ```
+* On your ROS2 Workspace navigate to src directory ``` cd /path/to/your/ROS2workspace/src```
+* In the src directory
+   ```
+    git clone
+   ```
+* remove the readme
+  ```
+   rm README.txt
+  ```
+  or use **rosignone**
+  ```
+   touch .rosignore
+  ```
+  then
+  ```
+   nano .rosignore
+  ```
+  > Use your preferred text editor
+  ```
+   README*
+  ```
+  then save and exit
+* Get to your workspace then
+   ```
+   colcon build
+   ```
 * IF BUILD WAS SUCCESSFUL NEXT IS TO RUN THE PROJECT
 ## HOW TO USE THE PROJECT
 ## TESTS
