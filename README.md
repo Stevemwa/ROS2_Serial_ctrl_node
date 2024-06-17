@@ -58,3 +58,7 @@ This project entails of a robotic vehicle that navigates on its own avoiding obs
 source install/.bashrc
 ```
 ## TESTS
+
+
+https://github.com/Stevemwa/Serial_ctrl/assets/62056954/79978d24-81e5-4146-a293-9c593bd809e3
+
