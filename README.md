@@ -74,6 +74,16 @@ usbipd list
    README*
   ```
   then save and exit
+* You can confirm the usb device connected using the command:
+  ```
+  dmesg | grep ttyUSB
+  ```
+  and then update the usb device code segment below:
+  ```
+  ser = serial.Serial('/dev/ttyUSB0', baudrate=115200, timeout=1)
+  ```
+
+
 * Get to your workspace then
    ```
    colcon build
