@@ -24,6 +24,34 @@ This project entails of a robotic vehicle that navigates on its own avoiding obs
   ```
    pip install pyserial
   ```
+## IF YOU ARE USING WSL YOU WILL NEED TO HAVE DONE:
+* Follow the tutorial: https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+* Downloaded USBIPD-WIN project 
+* Ensure WSL Command line is running
+* List all of the USB devices connected to Windows by opening PowerShell in administrator mode and entering the following command. 
+```
+usbipd list
+```
+* Before attaching the USB device, the command usbipd bind must be used to share the device, allowing it to be attached to WSL. This requires administrator privileges. Select the bus ID of the device you would like to use in WSL and run the following command. After running the command, verify that the device is shared using the command usbipd list again.
+  ```
+  usbipd bind --busid 4-4
+  ```
+* To attach the USB device, run the following command.
+  ```
+  usbipd attach --wsl --busid <busid>
+  ```
+* Open Ubuntu (or your preferred WSL command line) and list the attached USB devices using the command:
+  ```
+  lsusb
+  ```
+* Once you are done using the device in WSL, you can either physically disconnect the USB device or run this command from PowerShell:
+    ```
+    usbipd detach --busid <busid>
+    ```
+
+  
+## Continuing if you dont use WSL
+
 * On your ROS2 Workspace navigate to src directory ``` cd /path/to/your/ROS2workspace/src```
 * In the src directory
    ```
